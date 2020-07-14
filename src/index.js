@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // eslint-disable-line no-unused-vars
 // var PropTypes = require('prop-types'); // ES5 with npm
 // import Big from './big.mjs';
-const Big = require('big.js');
+const Big = require('big.js'); // eslint-disable-line no-unused-vars
 
 class Test extends React.Component {
   constructor(props) {
@@ -13,10 +13,14 @@ class Test extends React.Component {
       test: 1,
     };
   }
+
   render() {
     return (
       <div className="container">
-        <h1> Test result: {this.state.test} </h1>
+        <h1>
+          Test result:
+          {this.state.test}
+        </h1>
       </div>
     );
   }
@@ -24,5 +28,5 @@ class Test extends React.Component {
 
 ReactDOM.render(
   <Test />,
-  document.getElementById('root')
-)
+  document.getElementById('root'),
+);
