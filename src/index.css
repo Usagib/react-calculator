@@ -1,1 +1,21 @@
 /* ./src/index.css */
+
+#buttonPanelContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+};
+
+.button {
+  height: auto;
+  width: 25%;
+};
+
+#Calculator {
+  width: 50%;
+  height: auto;
+};
+
+.group {
+
+}
