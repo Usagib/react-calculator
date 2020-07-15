@@ -3,8 +3,7 @@ import Display from './Display.js';
 import ButtonPanel from './ButtonPanel.js';
 import '../index.css';
 
-export default class App extends React.Component {
-  render() {
+export default function App() {
     return (
       <div id="Calcualtor">
           <Display />
@@ -12,4 +11,3 @@ export default class App extends React.Component {
       </div>
     );
   }
-}
