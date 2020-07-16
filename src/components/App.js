@@ -4,10 +4,10 @@ import ButtonPanel from './ButtonPanel';
 import '../index.css';
 
 export default function App() {
-    return (
-      <div id="Calcualtor">
-        <Display />
-        <ButtonPanel />
-      </div>
-    );
+  return (
+    <div id="Calcualtor">
+      <Display />
+      <ButtonPanel />
+    </div>
+  );
 }
