@@ -7,32 +7,32 @@ export default class ButtonPanel extends React.Component {
     return (
       <div id="ButtonPanel">
         <div className="group">
-          <Button buttonName='AC' />
-          <Button buttonName='+/-' />
-          <Button buttonName='%' />
+          <Button buttonName='AC' color='lightgray' />
+          <Button buttonName='+/-' color='lightgray' />
+          <Button buttonName='%' color='lightgray' />
           <Button buttonName='/' />
         </div>
         <div className="group">
-          <Button buttonName='7' />
-          <Button buttonName='8' />
-          <Button buttonName='9' />
+          <Button buttonName='7' color='lightgray' />
+          <Button buttonName='8' color='lightgray' />
+          <Button buttonName='9' color='lightgray' />
           <Button buttonName='X' />
         </div>
         <div className="group">
-          <Button buttonName='4' />
-          <Button buttonName='5' />
-          <Button buttonName='6' />
+          <Button buttonName='4' color='lightgray' />
+          <Button buttonName='5' color='lightgray' />
+          <Button buttonName='6' color='lightgray' />
           <Button buttonName='-' />
         </div>
         <div className="group">
-          <Button buttonName='1' />
-          <Button buttonName='2' />
-          <Button buttonName='3' />
+          <Button buttonName='1' color='lightgray' />
+          <Button buttonName='2' color='lightgray' />
+          <Button buttonName='3' color='lightgray' />
           <Button buttonName='+' />
         </div>
         <div className="group">
-          <Button buttonName='0' width='50%' />
-          <Button buttonName='.' />
+          <Button buttonName='0' width='50%' color='lightgray' />
+          <Button buttonName='.' color='lightgray' />
           <Button buttonName='=' />
         </div>
       </div>
