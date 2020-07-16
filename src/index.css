@@ -1,10 +1,4 @@
-/* ./src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap');
-#buttonPanelContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
 .button {
   width: 25%;
@@ -16,16 +10,27 @@
   border: 1px solid white;
 }
 
-.button-0 {
-  width: 50%;
-  height: 100px;
-  font-family: 'Teko', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: black;
-  border: 1px solid white;
+.button:hover {
+  color: white;
+  background: darkgray !important;
 }
 
+.button:active {
+  background: gray !important;
+  color: black;
+}
+
+#ButtonPanel {
+  display: flex;
+  width: 700px;
+  flex-wrap: wrap;
+}
+
+#buttonPanelContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 #Calculator {
   display: flex;
@@ -43,6 +48,12 @@
   border: 1px solid white;
 }
 
+.group {
+  height: 100px;
+  background: #eee;
+  width: 700px;
+}
+
 .result {
   font-family: 'Teko', sans-serif;
   font-weight: bold;
@@ -51,16 +62,4 @@
   text-align: right;
   width: 100%;
   height: auto;
-}
-
-#ButtonPanel {
-  display: flex;
-  width: 700px;
-  flex-wrap: wrap;
-}
-
-.group {
-  height: 100px;
-  background: #eee;
-  width: 700px;
 }

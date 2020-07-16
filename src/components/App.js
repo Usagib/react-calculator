@@ -1,15 +1,13 @@
 import React from 'react';
-import Display from './Display.js';
-import ButtonPanel from './ButtonPanel.js';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 import '../index.css';
 
-export default class App extends React.Component {
-  render() {
+export default function App() {
     return (
       <div id="Calcualtor">
-          <Display />
-          <ButtonPanel />
+        <Display />
+        <ButtonPanel />
       </div>
-    );  
-  }
+    );
 }
