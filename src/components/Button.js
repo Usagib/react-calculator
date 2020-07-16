@@ -5,7 +5,7 @@ export default class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      number: 0,// eslint-disable-line react/no-unused-state
+      number: 0, // eslint-disable-line react/no-unused-state
     };
   }
 
@@ -17,10 +17,10 @@ export default class Button extends React.Component {
         type="button"
         className="button"
         style={{
-          width: width,
+          width: width, // eslint-disable-line object-shorthand
           background: color,
         }}
-        >
+      >
         { buttonName }
       </button>
     );
