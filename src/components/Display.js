@@ -6,7 +6,7 @@ export default class Display extends React.Component {
     const result = String(this.props.result);
     return (
       <div id="Display">
-        <h1>{result}</h1>
+        <p className="result">{result}</p>
       </div>
     );
   }

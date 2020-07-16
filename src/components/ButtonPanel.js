@@ -5,7 +5,7 @@ import '../index.css';
 export default class ButtonPanel extends React.Component {
   render() {
     return (
-      <div id="buttonPanelContainer">
+      <div id="ButtonPanel">
         <div className="group">
           <Button buttonName='AC' />
           <Button buttonName='+/-' />
@@ -31,10 +31,9 @@ export default class ButtonPanel extends React.Component {
           <Button buttonName='+' />
         </div>
         <div className="group">
-          <Button buttonName='0' />
+          <Button buttonName='0' width='50%' />
           <Button buttonName='.' />
           <Button buttonName='=' />
-          <Button />
         </div>
       </div>
     );
