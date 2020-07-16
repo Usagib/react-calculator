@@ -2,12 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class Display extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: 0, // eslint-disable-line react/no-unused-state
+    };
+  }
 
   render() {
-    const result = String(this.props.result);
+    const { result } = this.props;
     return (
       <div id="Display">
-        <p className="result">{result}</p>
+        <p className="result">{ result }</p>
       </div>
     );
   }
