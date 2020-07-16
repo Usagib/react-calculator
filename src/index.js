@@ -1,32 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './components/App.js';
 import PropTypes from 'prop-types'; // eslint-disable-line no-unused-vars
 // var PropTypes = require('prop-types'); // ES5 with npm
 // import Big from './big.mjs';
 const Big = require('big.js'); // eslint-disable-line no-unused-vars
 
-class Test extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      test: 1,
-    };
-  }
-
-  render() {
-    return (
-      <div className="container">
-        <h1>
-          Test result:
-          {this.state.test}
-        </h1>
-      </div>
-    );
-  }
-}
 
 ReactDOM.render(
-  <Test />,
+  <App />,
   document.getElementById('root'),
 );
