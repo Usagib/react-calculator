@@ -37,7 +37,7 @@ const calculate = (data, button) => {
     return {
       next,
       total,
-      operation
+      operation,
     };
   }
 
