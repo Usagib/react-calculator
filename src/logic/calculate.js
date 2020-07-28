@@ -1,21 +1,21 @@
-import Big from 'big.js';
 import operate from './operate';
 
 const calculate = (data, button) => {
-  let {total, next, operation} = data;
+  let { total, next, operation } = data;
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
   const isNumber = numbers.includes(button);
   const operations = ['+', '-', 'X', '%', '+/-', '÷'];
   const isOperation = operations.includes(button);
   const eq = ['='].includes(button);
 
-  if (button = 'AC') {
+  if (button === 'AC') {
     total = null;
     next = null;
     operation = null;
-    return { next,
+    return {
+      next,
       total,
-      operation
+      operation,
     };
   }
 
@@ -23,9 +23,10 @@ const calculate = (data, button) => {
     total = operate(total, next, operation);
     next = null;
     operation = null;
-    return { next,
+    return {
+      next,
       total,
-      operation
+      operation,
     };
   }
 

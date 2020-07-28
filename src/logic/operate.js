@@ -27,6 +27,7 @@ const operate = (no1, no2, op) => {
     default:
       return result;
   }
+  return result
 };
 
 export default operate;
