@@ -21,12 +21,14 @@ export default class App extends React.Component {
       operation: state.operation,
     })
   }
-  
+
   render() {
+    const { total, next } = this.state;
+    const result = next || total;
     return (
       <div id="Calcualtor">
-        <Display />
-        <ButtonPanel />
+        <Display total={result} />
+        <ButtonPanel clickHandler={this.handleClick}/>
       </div>
     );
   }
