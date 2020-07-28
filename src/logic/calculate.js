@@ -4,7 +4,7 @@ const calculate = (data, button) => {
   let { total, next, operation } = data;
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
   const isNumber = numbers.includes(button);
-  const operations = ['+', '-', 'X', '%', '+/-', '÷'];
+  const operations = ['+', '-', 'X', '%', '+/-', '/'];
   const isOperation = operations.includes(button);
   const eq = ['='].includes(button);
 
@@ -87,12 +87,12 @@ const calculate = (data, button) => {
     return { next, total, operation };
   }
 
-  if (operations && total) {
+  if (isOperation && total) {
     operation = button;
     return { next, total, operation };
   }
 
-  if (operations && button !== '+/-' && next) {
+  if (isOperation && button !== '+/-' && next) {
     total = next;
     next = null;
     operation = button;

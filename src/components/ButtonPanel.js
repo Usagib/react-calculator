@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import '../index.css';
+import PropTypes from 'prop-types';
 
 export default function ButtonPanel({ clickHandler }) {
   return (
@@ -37,3 +38,8 @@ export default function ButtonPanel({ clickHandler }) {
     </div>
   );
 }
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func,
+  buttonName: PropTypes.string,
+};
