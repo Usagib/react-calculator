@@ -6,7 +6,8 @@ const Button = ({
   color,
   buttonName,
   clickHandler,
-}) => return (
+}) => { // eslint-disable-line arrow-body-style
+  return (
     <button
       type="button"
       className="button"
@@ -21,6 +22,7 @@ const Button = ({
       { buttonName }
     </button>
   );
+};
 
 Button.defaultProps = {
   buttonName: '',
