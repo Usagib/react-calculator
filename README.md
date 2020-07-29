@@ -31,8 +31,6 @@
 - [About The Project](#about-the-project)
 - [Highlights](#highlights)
 - [Built With](#built-with)
-- [Prerequisites](#prerequisites)
-- [Run it Locally](#run-it-locally)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -45,16 +43,13 @@ Calculator built on React using ES6
 ## Highlights
 
 * Easy to use UI
+* Most used common operations
+
+![Screenshot](public/screenshot.png)
 
 ## Built With
 
 * React
-
-## Prerequisites
-
-
-### Run it Locally
-
 
 ## Contributing
 
@@ -72,7 +67,7 @@ Distributed under the MIT License.
 ## Contact
 
 Eduardo Bonilla Cáceres - eduardobonillac@gmail.com
-
+[Twitter](https://www.twitter.com/usagibonilla)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
