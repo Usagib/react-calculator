@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
 import PropTypes from 'prop-types';
+import Button from './Button';
 import '../index.css';
 
 export default function ButtonPanel({ clickHandler }) {

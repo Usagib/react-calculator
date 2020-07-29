@@ -6,8 +6,7 @@ const Button = ({
   color,
   buttonName,
   clickHandler,
-}) => {
-  return (
+}) => return (
     <button
       type="button"
       className="button"
@@ -15,14 +14,13 @@ const Button = ({
         width: width, // eslint-disable-line object-shorthand
         background: color,
       }}
-      onClick={()=> {
+      onClick={() => {
         clickHandler(buttonName);
       }}
     >
       { buttonName }
     </button>
   );
-};
 
 Button.defaultProps = {
   buttonName: '',
