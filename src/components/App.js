@@ -31,7 +31,7 @@ export default class App extends React.Component {
     return (
       <div id="Calcualtor">
         <Display total={result} />
-        <ButtonPanel clickHandler={this.handleClick}/>
+        <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
   }

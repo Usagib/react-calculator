@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ width, color, buttonName, clickHandler }) => {
+const Button = ({
+  width,
+  color,
+  buttonName,
+  clickHandler,
+}) => {
   return (
     <button
       type="button"
@@ -17,7 +22,7 @@ const Button = ({ width, color, buttonName, clickHandler }) => {
       { buttonName }
     </button>
   );
-}
+};
 
 Button.defaultProps = {
   buttonName: '',

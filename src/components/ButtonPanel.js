@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
-import '../index.css';
 import PropTypes from 'prop-types';
+import '../index.css';
 
 export default function ButtonPanel({ clickHandler }) {
   return (
@@ -40,6 +40,5 @@ export default function ButtonPanel({ clickHandler }) {
 }
 
 ButtonPanel.propTypes = {
-  clickHandler: PropTypes.func,
-  buttonName: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
 };
