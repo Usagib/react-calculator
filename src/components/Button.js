@@ -1,31 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      number: 0, // eslint-disable-line react/no-unused-state
-    };
-  }
-
-  render() {
-    const { width, color, buttonName } = this.props;
-
-    return (
-      <button
-        type="button"
-        className="button"
-        style={{
-          width: width, // eslint-disable-line object-shorthand
-          background: color,
-        }}
-      >
-        { buttonName }
-      </button>
-    );
-  }
-}
+const Button = ({
+  width,
+  color,
+  buttonName,
+  clickHandler,
+}) => { // eslint-disable-line arrow-body-style
+  return (
+    <button
+      type="button"
+      className="button"
+      style={{
+        width: width, // eslint-disable-line object-shorthand
+        background: color,
+      }}
+      onClick={() => {
+        clickHandler(buttonName);
+      }}
+    >
+      { buttonName }
+    </button>
+  );
+};
 
 Button.defaultProps = {
   buttonName: '',
@@ -37,4 +34,7 @@ Button.propTypes = {
   buttonName: PropTypes.string,
   width: PropTypes.string,
   color: PropTypes.string,
+  clickHandler: PropTypes.func.isRequired,
 };
+
+export default Button;
